@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/dreambucket.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Dream Bucket List</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f3ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4b0082;
+      margin-bottom: 30px;
+    }
+
+    .bucket-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .bucket-list li {
+      background-color: #ffeeba;
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      font-size: 18px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .bucket-list li.completed {
+      background-color: #d4f7dc;
+      color: #3a683b;
+    }
+
+    .bucket-list li span {
+      display: flex;
+      align-items: center;
+    }
+
+    .bucket-list s {
+      color: #3a683b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 My Dream Bucket List 🌟</h1>
+
+    <ul class="bucket-list">
+      <li class="completed"><span>✈️ <s>Visit Japan</s></span></li>
+      <li><span>🏄 Learn to surf in Hawaii</span></li>
+      <li class="completed"><span>🎓 <s>Graduate from college</s></span></li>
+      <li><span>🪂 Go skydiving</span></li>
+      <li><span>📖 Write a novel</span></li>
+      <li class="completed"><span>🎤 <s>Sing on stage</s></span></li>
+      <li><span>🥾 Climb a mountain</span></li>
+      <li><span>🌌 See the Northern Lights</span></li>
+      <li class="completed"><span>🚴‍♂️ <s>Bike across a country</s></span></li>
+      <li><span>🐘 Volunteer at an animal sanctuary</span></li>
+    </ul>
+  </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+<audio class="audio-output" style="display: none;"></audio><div id="volume-booster-visusalizer">
+                    <div class="sound">
+                        <div class="sound-icon"></div>
+                        <div class="sound-wave sound-wave_one"></div>
+                        <div class="sound-wave sound-wave_two"></div>
+                        <div class="sound-wave sound-wave_three"></div>
+                    </div>
+                    <div class="segments-box">
+                        <div data-range="1-20" class="segment"><span></span></div>
+                        <div data-range="21-40" class="segment"><span></span></div>
+                        <div data-range="41-60" class="segment"><span></span></div>
+                        <div data-range="61-80" class="segment"><span></span></div>
+                        <div data-range="81-100" class="segment"><span></span></div>
+                    </div>
+                </div></body></html>
