@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Dream Bucket List</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f3ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #4b0082;
+      margin-bottom: 30px;
+    }
+
+    .bucket-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .bucket-list li {
+      background-color: #ffeeba;
+      padding: 15px 20px;
+      margin: 10px 0;
+      border-radius: 10px;
+      font-size: 18px;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .bucket-list li.completed {
+      background-color: #d4f7dc;
+      color: #3a683b;
+    }
+
+    .bucket-list li span {
+      display: flex;
+      align-items: center;
+    }
+
+    .bucket-list s {
+      color: #3a683b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌟 My Dream Bucket List 🌟</h1>
+
+    <ul class="bucket-list">
+      <li class="completed"><span>✈️ <s>Visit Japan</s></span></li>
+      <li><span>🏄 Learn to surf in Hawaii</span></li>
+      <li class="completed"><span>🎓 <s>Graduate from college</s></span></li>
+      <li><span>🪂 Go skydiving</span></li>
+      <li><span>📖 Write a novel</span></li>
+      <li class="completed"><span>🎤 <s>Sing on stage</s></span></li>
+      <li><span>🥾 Climb a mountain</span></li>
+      <li><span>🌌 See the Northern Lights</span></li>
+      <li class="completed"><span>🚴‍♂️ <s>Bike across a country</s></span></li>
+      <li><span>🐘 Volunteer at an animal sanctuary</span></li>
+    </ul>
+  </div>
+</body>
+</html>
